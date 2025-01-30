@@ -1,0 +1,55 @@
+from tkinter import PanedWindow
+
+s = "Hello World!"
+print(len(s))
+print(s.find('e'))
+print(s.find('W'))
+print("")
+print(s.isdigit())
+print(s.isalpha())
+print(s.isalnum())
+print("")
+print(s.upper())
+print(s.lower())
+print("")
+print(s[-2])
+print(s[2:-2])
+print(s*2)
+print(s[2::])
+print('')
+colors = 'red blue green'
+print(colors.split())
+print("")
+path = '/home/user/documents/file.text'
+print(path.split('/'))
+print('')
+colors_split = colors.split()
+colors_joined = ' and '.join(colors_split)
+print(colors_joined)
+print('')
+numbers = '1 2 3 4 5 6 7'
+numbers_split = numbers.split()
+number_lines = "\n".join(numbers_split)
+print(number_lines)
+print('')
+int_num = int(input("Введите целое число: "))
+print(int_num)
+print(type(int_num))
+print('')
+age = 34
+My_age = "I'm %d years old"  %  age
+print(My_age)
+print("")
+pi = 31.4159265
+print ("%.4e" % (pi))
+day = 29
+month = 2
+year = 2024
+print("%d.%02d.%d" % (day,month,year))
+print("%d-%02d-%d" % (year, month, day))
+print("%d/%d/%d" % (year, day, month))
+print('')
+hours = 3
+minutes = 5
+seconds = 4
+print("%02d:%02d:%02d" % (hours, minutes, seconds))
